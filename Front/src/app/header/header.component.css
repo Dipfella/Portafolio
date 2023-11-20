@@ -1,0 +1,86 @@
+.header {
+  height: 4.5rem;
+  padding: 0 12rem 0 11rem;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 10px 10px rgba(0 0 0 / 10%);
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--secundary-color);
+  opacity: 0;
+  transition: opacity 600ms, transform 400ms;
+}
+
+.title::after {
+  opacity: 0;
+  transform: translate3d(300%, 0, 0);
+}
+
+.header:hover .title::after,
+.header:hover .title::after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.bre,
+.apellido {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  opacity: 0;
+  transition: 0.9s ease;
+}
+
+.header:hover .title {
+  letter-spacing: 1px;
+}
+
+.header:hover .apellido,
+.header:hover .bre {
+  opacity: 1;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navlink {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+a {
+  color: black;
+  font-weight: 500;
+  transition: color 0.5s, font-weight 0, 1s;
+}
+
+a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+a.active {
+  color: var(--secundary-color);
+  border-bottom: solid 2px var(--secundary-color);
+}
