@@ -3,6 +3,9 @@
 * {
   font-family: "Work Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /*--primary-color : rgb(10, 66, 50);*/
   --primary-color: rgb(1, 99, 104);

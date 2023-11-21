@@ -1,0 +1,38 @@
+.intro {
+  padding: 10%;
+  position: relative;
+  margin-top: -0.3rem;
+  width: 100%;
+  height: 100%;
+  background-image: url("src\assets\images\18851-geometricos.jpg");
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img {
+  width: 15rem;
+  height: 15rem;
+  background: url("src\assets\images\55468044.jfif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 55%;
+  background-position-y: 45%;
+  border-radius: 10rem;
+  border: 3px solid wheat;
+}
+.nombre {
+    color: var(--secundary-color);
+    font-weight: 300;
+}
+.descripcion {
+  color: white;
+  font-weight: 200;
+}
