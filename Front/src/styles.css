@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;700&display=swap');
 * {
   font-family: "Work Sans", sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   /*--primary-color : rgb(10, 66, 50);*/
   --primary-color: rgb(1, 99, 104);
   --secundary-color: #ffba00;
   --tertiary-color: #7caa83;
+  --margin-general: 0 13rem 0 11rem;
+
 }
 

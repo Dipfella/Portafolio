@@ -1,0 +1,153 @@
+.container-about {
+  margin: var(--margin-general);
+}
+.card {
+  border: none;
+  margin-top: 3rem;
+}
+.row {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: auto;
+}
+.img {
+  width: 30%;
+  height: 25rem;
+  background: url("src\assets\images\55468044.jfif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 55%;
+  background-position-y: 45%;
+}
+.card-title {
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid var(--secundary-color);
+  width: 23%;
+  padding-bottom: 0.2rem;
+}
+.card-subtitle {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.info {
+  border-top: 1px solid var(--secundary-color);
+  margin-bottom: 5.5%;
+}
+.info ul {
+  column-count: 2;
+}
+.info li {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 300;
+  padding: 7px 18px 7px 18px;
+  font-size: 14px;
+  border-radius: 0;
+}
+.intro-skills {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+}
+.intro-skills h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secundary-color);
+  padding-bottom: 0.5rem;
+  width: 9ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.skill-img1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/js.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/typescript.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-image: url(../../../assets/images/angular.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/nextjs.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img5 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/node.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img6 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/.net.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img7 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../../assets/images/git.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skills li {
+  list-style: none;
+  float: left;
+  margin-top: 0.6rem;
+}
+.bi-star-fill {
+  color: var(--secundary-color);
+}
+.starnone {
+  color: var(--primary-color);
+}
