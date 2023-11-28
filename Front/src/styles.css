@@ -6,13 +6,13 @@
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   /*--primary-color : rgb(10, 66, 50);*/
   --primary-color: rgb(1, 99, 104);
   --secundary-color: #ffba00;
   --tertiary-color: #7caa83;
   --margin-general: 0 13rem 0 11rem;
+  --padding-general: 2rem 0 2rem 0;
 
 }
 

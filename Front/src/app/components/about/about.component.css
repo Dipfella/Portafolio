@@ -29,6 +29,8 @@
 .card-subtitle {
   color: var(--primary-color);
   font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 .card-body {
   width: auto;

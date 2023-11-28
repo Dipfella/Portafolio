@@ -1,0 +1,81 @@
+#projects {
+  background-color: #ededed;
+  padding: var(--padding-general);
+}
+.container-projects {
+  margin: var(--margin-general);
+}
+.title {
+  padding: none;
+  border-bottom: 2px solid var(--secundary-color);
+  width: 8ch;
+}
+.row {
+  padding-right: 0;
+  padding-left: 0;
+}
+.card-projects {
+  margin: 5px;
+  position: relative;
+  list-style: none;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.card-projects::before {
+  content: "";
+  display: block;
+  padding: 10%;
+  width: 100%;
+}
+.card {
+  border: none;
+  background-color: white;
+  border-radius: 1.6rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.socials {
+  list-style: none;
+  position: absolute;
+  z-index: 10;
+  text-align: right;
+  width: 10%;
+  padding: 1% 3% 0 0;
+  visibility: hidden;
+}
+.socials a {
+  font-weight: 100;
+  font-size: 25px;
+  color: white;
+}
+.card-img-top {
+  filter: brightness(0.9) saturate(1) contrast(1);
+  transform-origin: bottom;
+  transform: scale(1) translateZ(0);
+}
+.card:hover .socials {
+  visibility: visible;
+}
+.card-projects:hover .card-img {
+  transform: scale(1.15) translateZ(0);
+  background-size: 260px;
+}
+.container-projects:hover .card-projects:not(:hover) {
+  transform: scale(0.9);
+}
+.container-projects:hover > .card-projects:not(:hover) .card-img,
+.container-projects:hover > .card-projects:not(:hover) .subtitle {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+.card-content {
+  top: 2%;
+  left: 0;
+  padding: 25px;
+  position: relative;
+}
+.card-subtitle {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
