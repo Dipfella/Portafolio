@@ -3,7 +3,7 @@
   align-items: center;
   background: linear-gradient(to right, black, var(--primary-color));
   padding: 0.3rem;
-  margin: var(--margin-general);
+  margin: var(--padding-general);
   margin-bottom: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

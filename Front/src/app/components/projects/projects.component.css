@@ -1,13 +1,11 @@
-#projects {
+.container-projects {
   padding: var(--padding-general);
 }
-.container-projects {
-  margin: var(--margin-general);
-}
 .title {
-  padding: none;
+  padding: 0;
   border-bottom: 2px solid var(--secundary-color);
   width: 8ch;
+  margin-bottom: 2rem;
 }
 .row {
   padding-right: 0;
@@ -27,7 +25,7 @@
   width: 100%;
 }
 .card {
-  margin: 0 0 5rem 0;
+  margin: 0 0 2rem 0;
   border: none;
   background-color: white;
   border-radius: 1.6rem;

@@ -1,5 +1,5 @@
 .container-about {
-  margin: var(--margin-general);
+  padding: var(--padding-general);
 }
 .card {
   border: none;
@@ -12,7 +12,7 @@
 .img {
   width: 26%;
   height: 25rem;
-  background: url("src\assets\images\55468044.jfif");
+  background: url(../../../assets/images/perfil2.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 55%;
