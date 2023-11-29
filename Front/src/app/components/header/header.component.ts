@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,9 @@ import { AfterViewInit, Component } from '@angular/core';
 export class HeaderComponent implements AfterViewInit {
   sections!: NodeListOf<HTMLElement>;
   navLinks!: NodeListOf<HTMLElement>;
-
+  animate = false;
+  isActive = false;
+  constructor() { }
   ngAfterViewInit(): void {
     document.addEventListener("scroll", this.handleScroll);
   }
@@ -31,6 +33,11 @@ export class HeaderComponent implements AfterViewInit {
         });
       }
     });
+  }
+
+  handleHamburguerClick() {
+    this.animate = !this.animate;
+    this.isActive = !this.isActive;
   }
 
 }

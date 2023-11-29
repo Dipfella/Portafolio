@@ -1,13 +1,26 @@
 <header class="d-flex flex-wrap justify-content-center py-2 mb-1 header">
   <h2 class="align-items-center me-md-auto text-decoration-none title">
-    <span class="nom">JULI</span><span class="bre">AN </span><span class="apellido">SARMIENTO</span>
+    <span class="nom">JULI</span><span class="bre">AN </span
+    ><span class="apellido">SARMIENTO</span>
   </h2>
   <nav class="navbar">
-    <li>
-      <a data-scroll="home" href="#home" class="navlink active">HOME</a>
-    </li>
-    <li><a data-scroll="about" href="#about" class="navlink">ABOUT</a></li>
-    <li><a data-scroll="projects" href="#projects" class="navlink">PROJECTS</a></li>
-    <li><a data-scroll="contact" href="#contact" class="navlink">CONTACT</a></li>
+    <ul class="m-0 navul" [ngClass]="isActive ? 'active' : ''">
+      <li>
+        <a data-scroll="home" href="#home" class="navlink active">HOME</a>
+      </li>
+      <li><a data-scroll="about" href="#about" class="navlink">ABOUT</a></li>
+      <li>
+        <a data-scroll="projects" href="#projects" class="navlink">PROJECTS</a>
+      </li>
+      <li>
+        <a data-scroll="contact" href="#contact" class="navlink">CONTACT</a>
+      </li>
+    </ul>
+    
   </nav>
+    <div class="hamburger" (click)="handleHamburguerClick()">
+      <div class="bar1" [ngClass]="animate ? 'animateBar1' : ''"></div>
+      <div class="bar2" [ngClass]="animate ? 'animateBar2' : ''"></div>
+      <div class="bar3" [ngClass]="animate ? 'animateBar3' : ''"></div>
+    </div>
 </header>
