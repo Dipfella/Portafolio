@@ -1,5 +1,4 @@
 #projects {
-  background-color: #ededed;
   padding: var(--padding-general);
 }
 .container-projects {
@@ -28,6 +27,7 @@
   width: 100%;
 }
 .card {
+  margin: 0 0 5rem 0;
   border: none;
   background-color: white;
   border-radius: 1.6rem;

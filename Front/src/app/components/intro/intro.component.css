@@ -49,3 +49,6 @@
   font-size: 30px;
   color: white;
 }
+.contact a:hover {
+  color: var(--secundary-color);
+}

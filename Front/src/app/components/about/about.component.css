@@ -3,7 +3,6 @@
 }
 .card {
   border: none;
-  margin-top: 3rem;
 }
 .row {
   flex-wrap: nowrap;
@@ -61,7 +60,7 @@ span {
 }
 .intro-skills {
   text-align: center;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0 0 0;
 }
 .intro-skills h3 {
   color: var(--primary-color);
