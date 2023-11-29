@@ -1,9 +1,9 @@
 .intro {
-  padding: 12%;
+  padding: 11%;
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("src\assets\images\18851-geometricos.jpg");
 }
 .container {
@@ -18,9 +18,9 @@
   flex-direction: column;
 }
 .img {
-  width: 14rem;
-  height: 14rem;
-  margin: 10%;
+  width: 18rem;
+  height: 18rem;
+  margin: 5%;
   background: url("src\assets\images\55468044.jfif");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -35,7 +35,7 @@
 }
 .descripcion {
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   cursor: default;
 }
 .contact {
@@ -52,4 +52,11 @@
 }
 .contact a:hover {
   color: var(--secundary-color);
+}
+@media only screen and (max-width: 880px) {
+  .img {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 13%;
+  }
 }

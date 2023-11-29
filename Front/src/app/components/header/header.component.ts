@@ -10,9 +10,9 @@ export class HeaderComponent implements AfterViewInit {
   navLinks!: NodeListOf<HTMLElement>;
   animate = false;
   isActive = false;
-  constructor() { }
+  constructor() {}
   ngAfterViewInit(): void {
-    document.addEventListener("scroll", this.handleScroll);
+    document.addEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
@@ -24,7 +24,7 @@ export class HeaderComponent implements AfterViewInit {
       const { id, offsetTop, offsetHeight } = section;
       const offset = offsetTop - 150;
 
-      if (scrollY >= offset && scrollY < offset + offsetHeight  ) {
+      if (scrollY >= offset && scrollY < offset + offsetHeight) {
         this.navLinks.forEach((link) => link.classList.remove('active'));
         this.navLinks.forEach((link) => {
           if (link.dataset['scroll'] == id) {
@@ -40,4 +40,8 @@ export class HeaderComponent implements AfterViewInit {
     this.isActive = !this.isActive;
   }
 
+  handleLinkClick() {
+    this.isActive = false;
+    this.animate = !this.animate
+  }
 }

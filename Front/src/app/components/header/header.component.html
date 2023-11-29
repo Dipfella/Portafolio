@@ -6,14 +6,14 @@
   <nav class="navbar">
     <ul class="m-0 navul" [ngClass]="isActive ? 'active' : ''">
       <li>
-        <a data-scroll="home" href="#home" class="navlink active">HOME</a>
+        <a data-scroll="home" href="#home" (click)="handleLinkClick()" class="navlink active">HOME</a>
       </li>
-      <li><a data-scroll="about" href="#about" class="navlink">ABOUT</a></li>
+      <li><a data-scroll="about" href="#about" (click)="handleLinkClick()" class="navlink">ABOUT</a></li>
       <li>
-        <a data-scroll="projects" href="#projects" class="navlink">PROJECTS</a>
+        <a data-scroll="projects" href="#projects" (click)="handleLinkClick()" class="navlink">PROJECTS</a>
       </li>
       <li>
-        <a data-scroll="contact" href="#contact" class="navlink">CONTACT</a>
+        <a data-scroll="contact" href="#contact" (click)="handleLinkClick()" class="navlink">CONTACT</a>
       </li>
     </ul>
     
