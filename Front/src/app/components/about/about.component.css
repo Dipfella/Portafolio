@@ -5,6 +5,7 @@
   border: none;
 }
 .row {
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
   width: auto;
@@ -22,7 +23,7 @@
   color: black;
   font-weight: 500;
   border-bottom: 2px solid var(--secundary-color);
-  width: 23%;
+  width: 9ch;
   padding-bottom: 0.2rem;
 }
 .card-subtitle {
@@ -154,4 +155,63 @@ span {
 }
 .starnone {
   color: var(--primary-color);
+}
+@media only screen and (max-width: 1140px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text{
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container-about{
+    padding: 5rem 3.5rem 3rem 3.5rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .row{
+    flex-direction: column;
+  }
+  .img {
+    width: 32%;
+    height: 24rem;
+  }
+  .card-body {
+    padding-top: 5px;
+  }
+  .skill-img1,
+  .skill-img2,
+  .skill-img3,
+  .skill-img4,
+  .skill-img5,
+  .skill-img6,
+  .skill-img7 {
+    width: 2rem;
+    height: 2rem;
+  }
+  .bi-star-fill {
+    font-size: 12px;
+  }
+  .starnone {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .skill-img1,
+  .skill-img2,
+  .skill-img3,
+  .skill-img4,
+  .skill-img5,
+  .skill-img6,
+  .skill-img7 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .bi-star-fill {
+    font-size: 10px;
+  }
+  .starnone {
+    font-size: 10px;
+  }
 }
