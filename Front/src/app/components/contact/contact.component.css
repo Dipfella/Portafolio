@@ -11,8 +11,10 @@
   cursor: default;
 }
 .content-contact {
+  display: flex;
   background-color: white;
   object-fit: cover;
+  width: 100%;
   border-radius: 8px;
   margin-bottom: -250px;
 }
@@ -26,7 +28,7 @@
   margin: 4rem 0 4rem 4rem;
 }
 .content-contact p {
-  margin: 4rem 0 4rem 4rem;
+  margin: 0.5rem 0 4rem 4rem;
   width: 50%;
 }
 .info-contact {
@@ -51,21 +53,90 @@ li a {
   text-decoration: none;
   color: #353535;
 }
-.info-socials {
-  background: var(--secundary-color);
-  position: absolute;
-  width: 15%;
-  height: 55.1%;
-  right: 12.6%;
-}
 .footer-contact {
   align-items: center;
   background: linear-gradient(to right, black, var(--primary-color));
   color: white;
   height: 28rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
-.footer-contact p {
-  margin-top: 20%;
+@media only screen and (max-width: 1180px) {
+  .content-contact h1 {
+    font-size: 3.5rem;
+    margin: 4rem 0 2rem 2rem;
+  }
+  .content-contact p {
+    margin: 2rem 0 2rem 2rem;
+    width: 60%;
+  }
+  .info-contact h2 {
+    font-size: 2.5;
+  }
+  .info-contact {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  i {
+    font-size: 20px;
+  }
 }
+@media only screen and (max-width: 1000px) {
+  .contact {
+    margin: 5rem 3.5rem 0 3.5rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .content-contact {
+    flex-direction: column;
+  }
+  .content-contact p {
+    width: 100%;
+  }
+  .info-contact{
+    margin: 0;
+  }
+  .info-contact ul {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .contact {
+    margin: 5rem 1.5rem 0 1.5rem;
+  }
+  .content-contact h1 {
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem 2rem;
+  }
+  .info-contact h2 {
+    text-align: center;
+  }
+  .info-contact ul {
+    column-count: 1;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .contact {
+    margin: 5rem 1rem 0 1rem;
+  }
+  .content-contact h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 1rem;
+  }
+  .content-contact p {
+    margin: 2rem 0 2rem 2rem;
+  }
+  .info-contact{
+    margin: 0;
+  }
+  .info-contact h2 {
+    text-align: center;
+  }
+  .info-contact ul {
+    column-count: 1;
+    text-align: center;
+  }
+}
+
