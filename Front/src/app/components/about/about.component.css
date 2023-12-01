@@ -11,8 +11,7 @@
   width: auto;
 }
 .img {
-  width: 26%;
-  height: 25rem;
+  height: 30rem;
   background: url(../../../assets/images/perfil2.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -33,7 +32,7 @@
   text-transform: uppercase;
 }
 .card-body {
-  width: auto;
+  width: 100%;
 }
 span {
   color: var(--primary-color);
@@ -74,13 +73,23 @@ span {
 .skills {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: baseline;
   background-color: white;
   padding: 1rem;
   border-radius: 2rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7 {
+  margin: 1rem 1rem 0 1rem;
 }
 .skill-img1 {
   margin-left: auto;
@@ -160,22 +169,22 @@ span {
   .card-title {
     font-size: 1.5rem;
   }
-  .card-text{
-    font-size: .9rem;
+  .card-text {
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 1000px) {
-  .container-about{
+  .container-about {
     padding: 5rem 3.5rem 3rem 3.5rem;
   }
 }
 @media only screen and (max-width: 770px) {
-  .row{
+  .row {
     flex-direction: column;
   }
-  .img {
-    width: 32%;
-    height: 24rem;
+  .img{
+    width: 100%;
+    background-size: 50%;
   }
   .card-body {
     padding-top: 5px;
@@ -198,15 +207,10 @@ span {
   }
 }
 @media only screen and (max-width: 600px) {
-  .skill-img1,
-  .skill-img2,
-  .skill-img3,
-  .skill-img4,
-  .skill-img5,
-  .skill-img6,
-  .skill-img7 {
-    width: 1.5rem;
-    height: 1.5rem;
+  .img {
+    background-size: 50%;
+    width: 100%;
+    height: 20rem;
   }
   .bi-star-fill {
     font-size: 10px;
