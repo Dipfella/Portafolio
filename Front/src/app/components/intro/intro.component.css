@@ -51,9 +51,13 @@
 .contact a {
   font-size: 30px;
   color: white;
+  transition: .2s ease;
 }
-.contact a:hover {
-  color: var(--secundary-color);
+.contact .bi-github:hover {
+  color: rgb(61, 61, 61);
+}
+.contact .bi-linkedin:hover {
+  color: #006394;
 }
 @media only screen and (max-width: 880px) {
   .img {

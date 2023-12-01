@@ -48,6 +48,20 @@ li {
 }
 i {
   font-size: 24px;
+  margin-right: 4px;
+  transition: .3s ease;
+}
+li:hover .bi-envelope-at {
+  color: red;
+}
+li:hover .bi-whatsapp {
+  color: #31D24F;
+}
+li:hover .bi-house-door {
+  color: var(--secundary-color);
+}
+li:hover .bi-linkedin {
+  color: #006394;
 }
 li a {
   text-decoration: none;
