@@ -52,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 👤 **Author1**
 
 - GitHub: [@user](https://github.com/user)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/user/](https://www.linkedin.com/in/julian-sarmiento-38a1551b5)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/julian-sarmiento-38a1551b5)
 
 ## 🤝 Contributing
 
