@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@user](https://github.com/user)
+- GitHub: [@Dipfella](https://github.com/Dipfella)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/julian-sarmiento-38a1551b5)
 
 ## 🤝 Contributing
