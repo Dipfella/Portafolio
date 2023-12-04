@@ -21,10 +21,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
---Node 
---Npm 
---Composer 
---Text editor (VsCode)
+- Node 
+- Npm 
+- Composer 
+- Text editor (VsCode)
 
 ### Install
 
